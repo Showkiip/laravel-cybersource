@@ -39,7 +39,9 @@ return array(
     /**
      * Both the merchant and transaction IDs
      */
-    'merchant_id' => '',
+    'api_key' => env('CYBERSOURCE_API_KEY'),
+    'api_secret' => env('CYBERSOURCE_API_SECRET'),
+    'merchant_id' => env('CYBERSOURCE_MERCHANT_ID'),
     'merchant_reference_code' => '',
     'transaction_id' => '',
     /**

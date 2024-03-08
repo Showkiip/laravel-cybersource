@@ -4,271 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de4578bece592157b6668c851d9f8290",
+    "content-hash": "5f36696d6a167acde1601bf83cda06ac",
     "packages": [
-        {
-            "name": "a17mad/laravel-cybersource",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/deva7mad/laravel-cybersource.git",
-                "reference": "895f563a2b4ed1d78c90e6b612c1682a7810aa7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/deva7mad/laravel-cybersource/zipball/895f563a2b4ed1d78c90e6b612c1682a7810aa7e",
-                "reference": "895f563a2b4ed1d78c90e6b612c1682a7810aa7e",
-                "shasum": ""
-            },
-            "require": {
-                "besimple/soap-client": "^0.2.6",
-                "illuminate/support": ">=5.4",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": ">=7.0",
-                "satooshi/php-coveralls": "^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "JustGeeky\\LaravelCybersource\\Providers\\LaravelCybersourceServiceProvider"
-                    ],
-                    "aliases": {
-                        "Cybersource": "JustGeeky\\LaravelCybersource\\Facades\\Cybersource"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "JustGeeky\\LaravelCybersource\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ahmad Elknany",
-                    "email": "geekyapp224@gmail.com",
-                    "role": "Software Engineer"
-                }
-            ],
-            "description": "This package wraps the Cybersource SOAP API in a convenient, easy to use package for Laravel.",
-            "keywords": [
-                "cybersource",
-                "cybersource payments laravel",
-                "integration",
-                "laravel",
-                "laravel-cybersource",
-                "payments",
-                "visa"
-            ],
-            "support": {
-                "issues": "https://github.com/deva7mad/laravel-cybersource/issues",
-                "source": "https://github.com/deva7mad/laravel-cybersource/tree/master"
-            },
-            "time": "2018-11-06T23:38:25+00:00"
-        },
-        {
-            "name": "ass/xmlsecurity",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aschamberger/XmlSecurity.git",
-                "reference": "c8976519ebbf6e4d953cd781d09df44b7f65fbb8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aschamberger/XmlSecurity/zipball/c8976519ebbf6e4d953cd781d09df44b7f65fbb8",
-                "reference": "c8976519ebbf6e4d953cd781d09df44b7f65fbb8",
-                "shasum": ""
-            },
-            "require": {
-                "ext-openssl": "*",
-                "lib-openssl": ">=0.9.0",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "suggest": {
-                "ext-mcrypt": "*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "ass\\XmlSecurity": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Robert Richards",
-                    "email": "rrichards@cdatazone.org"
-                },
-                {
-                    "name": "Andreas Schamberger",
-                    "email": "mail@andreass.net"
-                }
-            ],
-            "description": "The XmlSecurity library is written in PHP for working with XML Encryption and Signatures",
-            "homepage": "https://github.com/aschamberger/XmlSecurity",
-            "keywords": [
-                "encryption",
-                "security",
-                "signature",
-                "xml"
-            ],
-            "support": {
-                "issues": "https://github.com/aschamberger/XmlSecurity/issues",
-                "source": "https://github.com/aschamberger/XmlSecurity"
-            },
-            "time": "2015-05-31T10:10:35+00:00"
-        },
-        {
-            "name": "besimple/soap-client",
-            "version": "v0.2.6",
-            "target-dir": "BeSimple/SoapClient",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/BeSimple/BeSimpleSoapClient.git",
-                "reference": "50f186fd3e9fafc4ce2d194d5d18e3987d5fbf41"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/BeSimple/BeSimpleSoapClient/zipball/50f186fd3e9fafc4ce2d194d5d18e3987d5fbf41",
-                "reference": "50f186fd3e9fafc4ce2d194d5d18e3987d5fbf41",
-                "shasum": ""
-            },
-            "require": {
-                "ass/xmlsecurity": "~1.0",
-                "besimple/soap-common": "0.2.*",
-                "ext-curl": "*",
-                "ext-soap": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "~1.0",
-                "symfony/filesystem": "~2.0",
-                "symfony/process": "~2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "BeSimple\\SoapClient": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andreas Schamberger",
-                    "email": "mail@andreass.net"
-                },
-                {
-                    "name": "Christian Kerl",
-                    "email": "christian-kerl@web.de"
-                },
-                {
-                    "name": "Francis Besset",
-                    "email": "francis.besset@gmail.com"
-                }
-            ],
-            "description": "Build and consume SOAP Client based web services",
-            "homepage": "https://github.com/BeSimple/BeSimpleSoapClient",
-            "keywords": [
-                "soap",
-                "soap-client"
-            ],
-            "support": {
-                "issues": "https://github.com/BeSimple/BeSimpleSoapClient/issues",
-                "source": "https://github.com/BeSimple/BeSimpleSoapClient/tree/0.2"
-            },
-            "time": "2014-08-18T09:45:53+00:00"
-        },
-        {
-            "name": "besimple/soap-common",
-            "version": "v0.2.6",
-            "target-dir": "BeSimple/SoapCommon",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/BeSimple/BeSimpleSoapCommon.git",
-                "reference": "08aa78c7f1cae4b23cce5e8928dca7243ca4e4fa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/BeSimple/BeSimpleSoapCommon/zipball/08aa78c7f1cae4b23cce5e8928dca7243ca4e4fa",
-                "reference": "08aa78c7f1cae4b23cce5e8928dca7243ca4e4fa",
-                "shasum": ""
-            },
-            "require": {
-                "ass/xmlsecurity": "~1.0",
-                "ext-soap": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "ext-mcrypt": "*",
-                "mikey179/vfsstream": "~1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "BeSimple\\SoapCommon": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andreas Schamberger",
-                    "email": "mail@andreass.net"
-                },
-                {
-                    "name": "Christian Kerl",
-                    "email": "christian-kerl@web.de"
-                },
-                {
-                    "name": "Francis Besset",
-                    "email": "francis.besset@gmail.com"
-                }
-            ],
-            "description": "Build and consume SOAP Common based web services",
-            "homepage": "https://github.com/BeSimple/BeSimpleSoapCommon",
-            "keywords": [
-                "soap",
-                "soap-common"
-            ],
-            "support": {
-                "source": "https://github.com/BeSimple/BeSimpleSoapCommon/tree/0.2"
-            },
-            "time": "2014-08-14T19:40:13+00:00"
-        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -3599,20 +3336,20 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v6.4.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "ee0f7ed5cf298cc019431bb3b3977ebc52b86229"
+                "reference": "ec60a4edf94e63b0556b6a0888548bb400a3a3be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ee0f7ed5cf298cc019431bb3b3977ebc52b86229",
-                "reference": "ee0f7ed5cf298cc019431bb3b3977ebc52b86229",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ec60a4edf94e63b0556b6a0888548bb400a3a3be",
+                "reference": "ec60a4edf94e63b0556b6a0888548bb400a3a3be",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "autoload": {
@@ -3644,7 +3381,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v6.4.3"
+                "source": "https://github.com/symfony/css-selector/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -3660,7 +3397,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T14:51:35+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -3806,24 +3543,24 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v6.4.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "ae9d3a6f3003a6caf56acd7466d8d52378d44fef"
+                "reference": "834c28d533dd0636f910909d01b9ff45cc094b5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/ae9d3a6f3003a6caf56acd7466d8d52378d44fef",
-                "reference": "ae9d3a6f3003a6caf56acd7466d8d52378d44fef",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/834c28d533dd0636f910909d01b9ff45cc094b5e",
+                "reference": "834c28d533dd0636f910909d01b9ff45cc094b5e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/event-dispatcher-contracts": "^2.5|^3"
             },
             "conflict": {
-                "symfony/dependency-injection": "<5.4",
+                "symfony/dependency-injection": "<6.4",
                 "symfony/service-contracts": "<2.5"
             },
             "provide": {
@@ -3832,13 +3569,13 @@
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^5.4|^6.0|^7.0",
-                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
-                "symfony/error-handler": "^5.4|^6.0|^7.0",
-                "symfony/expression-language": "^5.4|^6.0|^7.0",
-                "symfony/http-foundation": "^5.4|^6.0|^7.0",
+                "symfony/config": "^6.4|^7.0",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/error-handler": "^6.4|^7.0",
+                "symfony/expression-language": "^6.4|^7.0",
+                "symfony/http-foundation": "^6.4|^7.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/stopwatch": "^5.4|^6.0|^7.0"
+                "symfony/stopwatch": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -3866,7 +3603,7 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v6.4.3"
+                "source": "https://github.com/symfony/event-dispatcher/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -3882,7 +3619,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T14:51:35+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -5317,20 +5054,20 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.4.4",
+            "version": "v7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "4e465a95bdc32f49cf4c7f07f751b843bbd6dcd9"
+                "reference": "f5832521b998b0bec40bee688ad5de98d4cf111b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/4e465a95bdc32f49cf4c7f07f751b843bbd6dcd9",
-                "reference": "4e465a95bdc32f49cf4c7f07f751b843bbd6dcd9",
+                "url": "https://api.github.com/repos/symfony/string/zipball/f5832521b998b0bec40bee688ad5de98d4cf111b",
+                "reference": "f5832521b998b0bec40bee688ad5de98d4cf111b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-intl-grapheme": "~1.0",
                 "symfony/polyfill-intl-normalizer": "~1.0",
@@ -5340,11 +5077,11 @@
                 "symfony/translation-contracts": "<2.5"
             },
             "require-dev": {
-                "symfony/error-handler": "^5.4|^6.0|^7.0",
-                "symfony/http-client": "^5.4|^6.0|^7.0",
-                "symfony/intl": "^6.2|^7.0",
+                "symfony/error-handler": "^6.4|^7.0",
+                "symfony/http-client": "^6.4|^7.0",
+                "symfony/intl": "^6.4|^7.0",
                 "symfony/translation-contracts": "^2.5|^3.0",
-                "symfony/var-exporter": "^5.4|^6.0|^7.0"
+                "symfony/var-exporter": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -5383,7 +5120,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.4.4"
+                "source": "https://github.com/symfony/string/tree/v7.0.4"
             },
             "funding": [
                 {
@@ -5399,7 +5136,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-01T13:16:41+00:00"
+            "time": "2024-02-01T13:17:36+00:00"
         },
         {
             "name": "symfony/translation",
@@ -8381,28 +8118,27 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v6.4.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "d75715985f0f94f978e3a8fa42533e10db921b90"
+                "reference": "2d4fca631c00700597e9442a0b2451ce234513d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/d75715985f0f94f978e3a8fa42533e10db921b90",
-                "reference": "d75715985f0f94f978e3a8fa42533e10db921b90",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/2d4fca631c00700597e9442a0b2451ce234513d3",
+                "reference": "2d4fca631c00700597e9442a0b2451ce234513d3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
-                "symfony/deprecation-contracts": "^2.5|^3",
+                "php": ">=8.2",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
-                "symfony/console": "<5.4"
+                "symfony/console": "<6.4"
             },
             "require-dev": {
-                "symfony/console": "^5.4|^6.0|^7.0"
+                "symfony/console": "^6.4|^7.0"
             },
             "bin": [
                 "Resources/bin/yaml-lint"
@@ -8433,7 +8169,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v6.4.3"
+                "source": "https://github.com/symfony/yaml/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -8449,7 +8185,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T14:51:35+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "theseer/tokenizer",

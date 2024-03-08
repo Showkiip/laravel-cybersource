@@ -6,8 +6,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "a17mad/laravel-cybersource": "^1.2",
-        "cybersource/sdk-php": "1.0.3",
+        "cybersource/sdk-php": "*",
+        "cybersource/rest-client-php": "0.0.48",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -32,7 +32,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "CyberSource\\": "path/to/cybersource-sdk/lib/"
+
         }
     },
     "scripts": {
