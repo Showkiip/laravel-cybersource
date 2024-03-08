@@ -32,8 +32,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/",
-            "CyberSource\\": "path/to/cybersource-sdk/lib/"
+            "Tests\\": "tests/"
 
         }
     },

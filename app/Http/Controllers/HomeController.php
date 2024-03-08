@@ -15,7 +15,7 @@ class HomeController extends Controller
     /**
      * Display the user's profile form.
      */
-    public function test(Request $request)
+    public function payment(Request $request)
     {
         try {
             // $cybersourceApiUrl = 'https://api.cybersource.com/'; // Change to production URL when ready
